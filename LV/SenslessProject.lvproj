@@ -13,7 +13,10 @@
 		<Item Name="CallDLL.vi" Type="VI" URL="../CallDLL.vi"/>
 		<Item Name="CompleteSenslessVi.vi" Type="VI" URL="../CompleteSenslessVi.vi"/>
 		<Item Name="StringCallback.vi" Type="VI" URL="../StringCallback.vi"/>
-		<Item Name="Abhängigkeiten" Type="Dependencies"/>
+		<Item Name="Abhängigkeiten" Type="Dependencies">
+			<Item Name="kernel32.dll" Type="Document" URL="../../../../Windows/System32/kernel32.dll"/>
+			<Item Name="SharedLib.dll" Type="Document" URL="../../builds/SenslessProject/Meine DLL/SharedLib.dll"/>
+		</Item>
 		<Item Name="Build-Spezifikationen" Type="Build">
 			<Item Name="Meine Applikation" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
@@ -70,7 +73,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E996C696-1E6C-4A69-BFDB-563FD3522523}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">SharedLib.dll</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Meine DLL/SharedLib.dll</Property>
