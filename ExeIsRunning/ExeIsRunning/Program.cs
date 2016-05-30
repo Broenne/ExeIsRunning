@@ -57,6 +57,8 @@ namespace ExeIsRunning
                 // if (clsProcess.GetProcessesByName("testprogram"))
                 if (clsProcess.ProcessName.Equals(name))
                 {
+                    //var jjj=clsProcess.ErrorDataReceived;
+                    
                     //if the process is found to be running then we
                     //return a true
                     return true;
